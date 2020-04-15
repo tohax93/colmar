@@ -1,6 +1,10 @@
-span a {
-    font-size: 32px;
+header {
     display: inline;
+}
+header span {
+    font-size: 32px;
+}
+header span a {
     text-decoration: none;
 }
 header img{

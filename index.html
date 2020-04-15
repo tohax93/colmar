@@ -6,63 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
 </head>
+<header>
+    <div class="logo">
+        <a href=index.html><img src="./resources/images/ic-logo.svg" text="Colmar Academy">
+        <span id="desktop"><b>Colmar</b> Academy</span></a>
+    </div>
+    <nav id="desktop">
+        <ul>
+            <li><a href="#">Kampus</a></li>
+            <li><a href="#">Online</a></li>
+            <li><a href="#">Pro firmy</a></li>
+            <li><a href="#">Registrace</a></li>
+        </ul>
+    </nav>
+    <nav id="mobile">
+        <ul>
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+        </ul>
+    </nav>
+</header>
 <body>
-    <header>
-        <div id="logo">
-            <img src="./resources/images/ic-logo.svg" text="Colmar Academy">
-            <span><a href=index.html>Colmar Academy</a></span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Kampus</a></li>
-                <li><a href="#">Online</a></li>
-                <li><a href="#">Pro firmy</a></li>
-                <li><a href="#">Registrace</a></li>
-            </ul>
-        </nav>
-    </header>
     <section class="box1">
-        <img src="resources/images/information-main.jpg">
-        <h2>Naučte se něco nového.</h2>
+        <img src="resources/images/banner.jpg">
+        <h1>Naučte se něco nového.</h1>
         <p>Naučte se něco nového s naším inovativním systémem výuky. Zkuste to zdarma na týden, pak jen za 499 Kč za měsíc.</p>
         <button>Začněte zde</button>
     </section>
     <section class="box2">
         <div id="main">
             <img src="resources/images/information-main.jpg">
-            <h2>Procvičovat se nebolí.</h2>
-            <p>Vyzkoušejte naše programy. Máme unikátní systém výuky založený na metodě „cukr a bitch“. To je naprosto skvělé, úžasné a jedinečné. S ničím podobným jste se nikdy nesetkali, na to vemte jed. Nebo cukr. Kostku cukru a pohlazení po nozdrách. Budete se cítit jako kůň. Jako divoký kůň osaměle putující nespoutanou planinou.</p>    
-        </div>
-        <img src="resources/images/information-main.jpg">
             <h2>Učení nebolí.</h2>
             <p>Vyzkoušejte naše programy. Máme unikátní systém výuky založený na metodě „cukr a bitch“. To je naprosto skvělé, úžasné a jedinečné. S ničím podobným jste se nikdy nesetkali, na to vemte jed. Nebo cukr. Kostku cukru a pohlazení po nozdrách. Budete se cítit jako kůň. Jako divoký kůň osaměle putující nespoutanou planinou.</p>    
+        </div>
         <div id="side">
             <div id="date">
-                <img src="resources/images/information-main.jpg">
-                <h2>Datum</h2>
+                <img id="desktop" src="resources/images/information-orientation.jpg">
+                <img id="mobile" src="resources/images/information-orientation-mobile.jpg">
+                <h3>Datum</h3>
                 <p>39. listopad 2001 v 15:02 a 84. prosince 2003 v 17:13.</p>
                 <a href="#">Čti více.</a>
             </div>
             <div id="campus">
-                <img src="resources/images/information-main.jpg">
-                <h2>Náš kampus</h2>
+                <img id="desktop" src="resources/images/information-campus.jpg">
+                <img id="mobile" src="resources/images/information-campus-mobile.jpg">
+                <h3>Náš kampus</h3>
                 <p>Najděte cumpussy ve vašem okolí.</p>
                 <a href="#">Čti více.</a>
             </div>
             <div id="guest">
-                <img src="resources/images/information-main.jpg">
-                <h2>Aktuální host</h2>
+                <img id="desktop" src="resources/images/information-guest-lecture.jpg">
+                <img id="mobile" src="resources/images/information-guest-lecture-mobile.jpg">
+                <h3>Aktuální host</h3>
                 <p>Přidejte se k lekci s Tondou Havlíksonem a jeho přáteli. Bude povídat příjemné zážitky, pít nealkoholické pivo a možná, ale opravdu jenom možná i něco zazpívá. Za příplatek.</p>
                 <a href="#">Čti více.</a>
             </div>
         </div>
     </section>
     <section id="box3">
-        <div id="main">
-            <img src="resources/images/information-main.jpg">
-            <h2>Procvičovat se nebolí.</h2>
-            <p>Vyzkoušejte naše programy. Máme unikátní systém výuky založený na metodě „cukr a bitch“. To je naprosto skvělé, úžasné a jedinečné. S ničím podobným jste se nikdy nesetkali, na to vemte jed. Nebo cukr. Kostku cukru a pohlazení po nozdrách. Budete se cítit jako kůň. Jako divoký kůň osaměle putující nespoutanou planinou.</p>    
+        <h2>Výběr lekcí</h2>
+        <div id="course1">
+            <img src="resources/images/course-software.jpg">
+            <h3>Software Engineering</h3>
+            <p>KURZY</p>
+            <p>Programování, kódování, HTML, CSS, JS, atd.</p>    
+        </div>
+        <div id="course2">
+            <img src="resources/images/course-computer-art.jpg">
+            <h3>Computer Art</h3>
+            <p>KURZY</p>
+            <p>Jak se tvoří umění na počítači? Pojďte proniknout do jeho tajů.</p>    
+        </div>
+        <div id="course3">
+            <img src="resources/images/course-design.jpg">
+            <h3>Design</h3>
+            <p>KURZY</p>
+            <p>User experience, věci kolem desingu. Vše od A do Z.</p>    
+        </div>
+        <div id="course4">
+            <img src="resources/images/course-data.jpg">
+            <h3>Data</h3>
+            <p>KURZY</p>
+            <p>Data Science, Big Data, Analýza, Datová žurnalistika.</p>    
+        </div>
+        <div id="course5">
+            <img src="resources/images/course-business.jpg">
+            <h3>Business</h3>
+            <p>KURZY</p>
+            <p>Chcete být v byznysu urputné hovado? Tento kurz vás to naučí.</p>    
+        </div>
+        <div id="course6">
+            <img src="resources/images/course-marketing.jpg">
+            <h3>Marketing</h3>
+            <p>KURZY</p>
+            <p>Jednou mi někdo řekl, že markeťáci jsou debilové. Pojdme tomuto cejchu napravit reputaci.</p>    
         </div>
     </section>
+    <section id="box3m">
+        <h2>Výběr lekcí</h2>
+        <div id="course1">
+            <h3>Software Engineering</h3>
+        </div>
+        <div id="course2">
+            <h3>Computer Art</h3>
+        </div>
+        <div id="course3">
+            <h3>Design</h3>
+        </div>
+        <div id="course4">
+            <h3>Data</h3>
+        </div>
+        <div id="course5">
+            <h3>Business</h3>
+        </div>
+        <div id="course6">
+            <h3>Marketing</h3>
+        </div>
+    </section>
+    <section id="thesis">
+        <div id="video">
+            <video src="./resources/videos/thesis.mp4">
+                <h3>Reimagine urbam</h3>
+                <p>Kýblařina v Brně. To je jinačí kumšt. Viktor Dufka na hrad. Brno hulí, Brno kurva hulí! Co se v mládí naučíš, ve stáří jako když najdeš. Dredy nejsou rasismus. Dejte Kim Čong Unovi pokoj, je to dobrý týpek. Dřív jsem s ním hulil. A víš tamtoho chlápka? Tak s ním taky hulím pořád.</p> 
+        </div>
+        <div id="side">
+            <div id="fisma">
+                <img src="resources/images/thesis-fisma.jpg">
+                <h3>Fisma: Design and Prototype</h3>
+                <p>Designéři světa ukazují, jak makaj.</p>
+            </div>
+            <div id="now">
+                <img src="resources/images/thesis-now-and-then.jpg">
+                <h3>Now and then</h3>
+                <p>Podívejte se jak to vypadalo tehdy a jak teď. Koronavirové město duchů v centru Prahy.</p>
+            </div>
+    </section>
+    <footer>
+        <p>(c) 2099 Tondocuc zvaný též jako Sakovač ésí</p>
+        <p><a href=#>Podmínky</a></p>
+        <p><a href=#>Pravidla</a></p>
+    </footer>
 </body>
 </html>
