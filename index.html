@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <link href="./resources/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
 </head>
 <header>
     <div class="logo">
-        <a href=index.html><img src="./resources/images/ic-logo.svg" text="Colmar Academy">
-        <span id="desktop"><b>Colmar</b> Academy</span></a>
+        <p><a href=index.html><img src="./resources/images/ic-logo.svg" text="Colmar Academy">
+        <span><b>COLMAR</b> ACADEMY</span></a></p>
     </div>
     <nav id="desktop">
         <ul>
@@ -21,6 +23,7 @@
     </nav>
     <nav id="mobile">
         <ul>
+            <li><a href=index.html><img src="./resources/images/ic-logo.svg"></a></li>
             <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
             <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
             <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
@@ -29,38 +32,56 @@
 </header>
 <body>
     <section class="box1">
-        <img src="resources/images/banner.jpg">
-        <h1>Naučte se něco nového.</h1>
-        <p>Naučte se něco nového s naším inovativním systémem výuky. Zkuste to zdarma na týden, pak jen za 499 Kč za měsíc.</p>
-        <button>Začněte zde</button>
+        <div class="box1img">
+            <img src="resources/images/banner.jpg">
+        </div>
+        <div class="box1text">
+            <h1>Naučte se něco nového.</h1>
+            <p><b>Naučte se něco nového s naším inovativním systémem výuky. Zkuste to zdarma na týden, pak jen za 499 Kč za měsíc.</b></p>
+            <button onclick="window.location.href = 'https://seznam.cz';">Začněte zde</button>
+        </div>
+            <div></div>
     </section>
     <section class="box2">
         <div id="main">
             <img src="resources/images/information-main.jpg">
             <h2>Učení nebolí.</h2>
-            <p>Vyzkoušejte naše programy. Máme unikátní systém výuky založený na metodě „cukr a bitch“. To je naprosto skvělé, úžasné a jedinečné. S ničím podobným jste se nikdy nesetkali, na to vemte jed. Nebo cukr. Kostku cukru a pohlazení po nozdrách. Budete se cítit jako kůň. Jako divoký kůň osaměle putující nespoutanou planinou.</p>    
+            <p>Vyzkoušejte naše programy. Máme unikátní systém výuky založený na metodě „cukr a bitch“. To je naprosto skvělé, úžasné a jedinečné. S ničím podobným jste se nikdy nesetkali, na to vemte jed. Nebo cukr. Kostku cukru a pohlazení po nozdrách. Budete se cítit jako kůň. Jako divoký kůň osaměle putující nespoutanou planinou.</p> 
+            <p><i>Dr. Mengele Cźucźa, hlavní ředitel naší krasné a hlavně poctivé a nezkorumpované školy. Fakt jsme poctiví. A nezkorumpovaní. Média lžou.</i></p> 
         </div>
         <div id="side">
             <div id="date">
-                <img id="desktop" src="resources/images/information-orientation.jpg">
-                <img id="mobile" src="resources/images/information-orientation-mobile.jpg">
-                <h3>Datum</h3>
-                <p>39. listopad 2001 v 15:02 a 84. prosince 2003 v 17:13.</p>
-                <a href="#">Čti více.</a>
+                <div id="dateimg">
+                    <img id="desktop" src="resources/images/information-orientation.jpg">
+                    <img id="mobile" src="resources/images/information-orientation-mobile.jpg">
+                </div>
+                <div id="datetext">
+                    <h3>Datum</h3>
+                    <p>39. listopad 2001 v 15:02 a 84. prosince 2003 v 17:13.</p>
+                    <a href="#">Čti více.</a>
+                </div>
             </div>
             <div id="campus">
-                <img id="desktop" src="resources/images/information-campus.jpg">
-                <img id="mobile" src="resources/images/information-campus-mobile.jpg">
-                <h3>Náš kampus</h3>
-                <p>Najděte cumpussy ve vašem okolí.</p>
-                <a href="#">Čti více.</a>
+                <div id="campusimg">
+                    <img id="desktop" src="resources/images/information-campus.jpg">
+                    <img id="mobile" src="resources/images/information-campus-mobile.jpg">
+                </div>
+                <div id="campustext">
+                    <h3>Náš kampus</h3>
+                    <p>Najděte cumpussy ve vašem okolí.</p>
+                    <a href="#">Čti více.</a>
+                </div>
             </div>
             <div id="guest">
-                <img id="desktop" src="resources/images/information-guest-lecture.jpg">
-                <img id="mobile" src="resources/images/information-guest-lecture-mobile.jpg">
-                <h3>Aktuální host</h3>
-                <p>Přidejte se k lekci s Tondou Havlíksonem a jeho přáteli. Bude povídat příjemné zážitky, pít nealkoholické pivo a možná, ale opravdu jenom možná i něco zazpívá. Za příplatek.</p>
-                <a href="#">Čti více.</a>
+                <div id="guestimg">
+                    <img id="desktop" src="resources/images/information-guest-lecture.jpg">
+                    <img id="mobile" src="resources/images/information-guest-lecture-mobile.jpg">
+                </div>
+                <div id="guesttext">
+                    <h3>Aktuální host</h3>
+                    <p>Přidejte se k lekci s Tondou Havlíksonem a jeho přáteli. Bude povídat příjemné zážitky.</p>
+                    <p><a href="#">Čti více.</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -143,7 +164,7 @@
             </div>
     </section>
     <footer>
-        <p>(c) 2099 Tondocuc zvaný též jako Sakovač ésí</p>
+        <p>(c) 2099 Tondocuc zvaný též jako Sakovač prdelí</p>
         <p><a href=#>Podmínky</a></p>
         <p><a href=#>Pravidla</a></p>
     </footer>

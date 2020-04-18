@@ -1,13 +1,293 @@
-header {
-    display: inline;
+html, body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    background-color: rgba(255, 255, 255);
+    opacity: 0.8;
+    z-index: 5;
+    justify-content: space-between;
+    top: 0;
+    transition: opacity 500ms ease-in;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+header .logo {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: -8%;
+    margin-left: 24px;
+}
+
+header .logo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    word-spacing: -5px;
+}
+
 header span {
+    color: #444444;
+}
+
+header span b {
+    color: black;
+}
+
+header img{
+    height: 36px;
+    vertical-align: middle;
+}
+
+nav ul {
+    display: flex;
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+    top: -15%;
+    margin-right: 24px;
+}
+
+nav ul li {
+    margin: 16px;
+}
+
+h1 {
     font-size: 32px;
 }
-header span a {
-    text-decoration: none;
+
+h2 {
+    font-size: 28px;
 }
-header img{
-    height: 32px;
-    
+
+h3 {
+    font-size: 21px;
+    text-decoration: solid;
+}
+
+a {
+    font-size: 18px;
+}
+
+.box1 {
+    display: flex;
+    background-color:rgb(243, 243, 243);
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 64px;
+}
+
+.box1img img {
+    width: 100%;
+}
+
+.box1img {
+    width: 60%;
+    margin: 32px 24px 32px 24px;
+}
+
+.box1text {
+    width: 40%;
+}
+
+.box1 h1 {
+    margin-top: 25%;
+    width: 100%;
+}
+
+.box1 p {
+    font-size: 18px;
+    width: 98%;
+}
+
+button {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(167, 167, 167);
+    border-radius: 5px;
+    width: 50%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #eeeeee;
+    color: rgb(0, 0, 0);
+}
+
+.box2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.box2 p {
+    font-size: 18px;
+}
+
+#main {
+    width: 60%;
+    margin: 32px 24px 32px 24px;
+}
+
+#main img {
+    width: 100%;
+
+}
+
+#side {
+    width: 40%;
+    border-left: solid 1px rgb(207, 207, 207);
+}
+
+#dateimg, #campusimg, #guestimg {
+    height: auto;
+    width: 35%;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+#dateimg {
+    margin-top: 32px;
+}
+
+#dateimg img, #campusimg img, #guestimg img {
+    width: 100%;
+}
+
+#datetext, #campustext, #guesttext {
+    width: 65%;
+    margin-bottom: 16px;
+}
+
+#datetext {
+    margin-top: 16px;
+}
+
+#date {
+    display: flex;
+    border-bottom: double rgb(207, 207, 207);
+}
+
+#campus {
+    display: flex;
+}
+
+#guest {
+    display: flex;
+    background-color:rgb(243, 243, 243);
+}
+
+#side a {
+    color: rgb(0, 119, 231);
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+#mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 880px) {
+header .logo, #desktop {
+    display: none;
+}
+
+#mobile {
+    display: block;
+}
+
+nav ul {
+    position: relative;
+    top: -23%}
+
+
+header {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+.box1img {
+    min-width: 100%;
+    margin: 0;
+}
+
+.box1 {
+    flex-wrap: wrap;
+}
+
+.box1text {
+    min-width: 100%;
+}
+
+.box1 h1 {
+    margin-top: 32px;
+    padding-top: 0;
+    width: 100%;
+    margin-left: 16px;
+}
+
+.box1 p {
+    margin-top: 32px;
+    margin-left: 16px;
+}
+
+button {
+    margin-top: 40px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    width: 50%;
+} 
+
+#main {
+    display: none;
+}
+
+#side {
+    width: 100%;
+    border: 0;
+}
+
+#date {
+    border: 0;
+}
+
+#date, #campus, #guest {
+    display: block;
+    padding-bottom: 16px;
+}
+
+#dateimg, #campusimg, #guestimg {
+    width: auto;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#datetext, #campustext, #guesttext {
+    margin: 16px 16px 16px 16px;
+    width: 100%;
+}
+
 }
